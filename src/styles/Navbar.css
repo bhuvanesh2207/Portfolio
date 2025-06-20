@@ -1,0 +1,67 @@
+:root {
+  --nav-color: #444444;
+  --nav-hover-color: #34b7a7;
+  --nav-font: "Poppins", sans-serif;
+}
+
+.navmenu {
+  padding: 0;
+}
+
+.navmenu ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+
+.navmenu li {
+  position: relative;
+}
+
+.navmenu > ul > li {
+  white-space: nowrap;
+  padding: 15px 14px;
+}
+
+.navmenu a,
+.navmenu a:focus {
+  color: var(--nav-color);
+  font-size: 15px;
+  padding: 0 2px;
+  font-family: var(--nav-font);
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  white-space: nowrap;
+  transition: 0.3s;
+  position: relative;
+  text-decoration: none;
+}
+
+.navmenu > ul > li > a:before {
+  content: "";
+  position: absolute;
+  height: 2px;
+  bottom: -6px;
+  left: 0;
+  background-color: var(--nav-hover-color);
+  visibility: hidden;
+  width: 0px;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.navmenu a:hover:before,
+.navmenu li:hover > a:before,
+.navmenu .active:before {
+  visibility: visible;
+  width: 25px;
+}
+
+.navmenu li:hover > a,
+.navmenu .active,
+.navmenu .active:focus {
+  color: var(--nav-hover-color);
+}
