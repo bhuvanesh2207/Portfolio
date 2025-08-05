@@ -1,67 +1,87 @@
-:root {
-  --nav-color: #444444;
-  --nav-hover-color: #34b7a7;
-  --nav-font: "Poppins", sans-serif;
-}
-
+/* Navbar.css */
 .navmenu {
-  padding: 0;
+  background: linear-gradient(135deg, #3498db, #2980b9);
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
 .navmenu ul {
+  display: flex;
+  justify-content: flex-start; /* Changed from flex-end to flex-start */
+  list-style: none;
   margin: 0;
   padding: 0;
-  display: flex;
-  list-style: none;
-  align-items: center;
+  gap: 2rem;
 }
 
 .navmenu li {
   position: relative;
 }
 
-.navmenu > ul > li {
-  white-space: nowrap;
-  padding: 15px 14px;
-}
-
-.navmenu a,
-.navmenu a:focus {
-  color: var(--nav-color);
-  font-size: 15px;
-  padding: 0 2px;
-  font-family: var(--nav-font);
-  font-weight: 400;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  white-space: nowrap;
-  transition: 0.3s;
-  position: relative;
+.navmenu a {
+  color: white;
   text-decoration: none;
+  font-weight: 500;
+  font-size: 1.1rem;
+  padding: 0.5rem 0;
+  transition: all 0.3s ease;
+  display: inline-block;
 }
 
-.navmenu > ul > li > a:before {
-  content: "";
+.navmenu a:hover {
+  color: #e8f4fc;
+  transform: translateY(-2px);
+}
+
+/* Underline animation */
+.navmenu a::after {
+  content: '';
   position: absolute;
+  width: 100%;
   height: 2px;
-  bottom: -6px;
+  bottom: 0;
   left: 0;
-  background-color: var(--nav-hover-color);
-  visibility: hidden;
-  width: 0px;
-  transition: all 0.3s ease-in-out 0s;
+  background-color: white;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.3s ease-out;
 }
 
-.navmenu a:hover:before,
-.navmenu li:hover > a:before,
-.navmenu .active:before {
-  visibility: visible;
-  width: 25px;
+.navmenu a:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
 
-.navmenu li:hover > a,
-.navmenu .active,
-.navmenu .active:focus {
-  color: var(--nav-hover-color);
+/* Active link style */
+.navmenu a.active {
+  font-weight: 600;
+}
+
+.navmenu a.active::after {
+  transform: scaleX(1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navmenu {
+    padding: 1rem;
+  }
+  
+  .navmenu ul {
+    justify-content: center; /* Center on mobile for better appearance */
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .navmenu ul {
+    gap: 1rem;
+  }
+  
+  .navmenu a {
+    font-size: 1rem;
+  }
 }
