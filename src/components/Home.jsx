@@ -8,9 +8,10 @@
         <section className="about-section">
           <h2>About Me</h2>
           <p>
-            I'm a Computer Science graduate with a strong interest in full-stack web development and software engineering.
-            I enjoy creating scalable, efficient, and user-friendly web applications. I am eager to learn new technologies
-            and continuously improve my development skills.
+            Computer Science graduate with strong Full Stack Development skills and a keen interest in Backend Development.
+            Experienced in building scalable, secure web applications using REST APIs and database integration.
+            Passionate about solving real-world problems through technology and effective teamwork, continuously 
+            updating skills to keep pace with modern web practices.
           </p>
 
           <h3>Personal Information</h3>
@@ -29,19 +30,16 @@
               <h4>Adhiyamaan College of Engineering</h4>
               <p><strong>Degree:</strong> B.E – Computer Science and Engineering</p>
               <p><strong>Year:</strong> 2020 – 2024</p>
-              <p><strong>GPA:</strong> 7.3</p>
             </div>
             <div>
               <h4>Green Valley Matric. Hr. Sec. School</h4>
               <p><strong>Qualification:</strong> HSC</p>
               <p><strong>Year:</strong> 2019 – 2020</p>
-              <p><strong>Percentage:</strong> 64%</p>
             </div>
             <div>
               <h4>Green Valley Matric. Hr. Sec. School</h4>
               <p><strong>Qualification:</strong> SSLC</p>
               <p><strong>Year:</strong> 2017 – 2018</p>
-              <p><strong>Percentage:</strong> 84%</p>
             </div>
           </div>
         </section>
@@ -58,7 +56,7 @@
         <ul>
           <li><strong>HTML5:</strong> Proficient in structuring semantic and accessible webpages using modern HTML standards.</li>
           <li><strong>CSS3:</strong> Skilled in layout techniques including Flexbox, Grid, transitions, and responsive design with media queries.</li>
-          <li><strong>JavaScript:</strong> Strong grasp of core concepts like DOM manipulation, ES6 features, async programming, and event handling.</li>
+          <li><strong>JavaScript:</strong> Strong grasp of core concepts like DOM manipulation, async programming, and event handling.</li>
           <li><strong>React.js:</strong> Experienced in building component-based UIs, managing state with hooks, and working with React Router and props/state systems.</li>
         </ul>
       </div>
@@ -123,25 +121,26 @@
         <section className="internships-section">
           <h1>Internships</h1>
 
+         <div>
+          <h4>INTARM Technologies</h4>
+          <p><i>Web Development Intern</i> | May – June 2023</p>
+          <ul>
+            <li>Designed and developed responsive web pages using HTML, CSS, and JavaScript.</li>
+            <li>Improved UI performance and collaborated with mentors on modern design practices.</li>
+          </ul>
+        </div>
+
+
           <div>
-            <h4>Intram Technologies</h4>
-            <p>May – June 2023</p>
-            <p>Front-End Developer Intern</p>
+            <h4>KodNest</h4>
+            <p><i>Full Stack Development Intern</i> | Jan – July 2025</p>
             <ul>
-              <li>Gained hands-on experience in web development.</li>
-              <li>Improved skills in modern web development practices.</li>
+              <li>Gained hands-on experience in Java, Python, SQL, Spring Boot, React.js, and MySQL, applying them to develop and deploy full-stack projects.</li>
+              <li>Built multiple projects during the internship, applying the technologies and tools learned.</li>
+              <li>Worked with Eclipse, Git, Postman, and Docker for version control, API testing, and containerization.</li>
             </ul>
           </div>
 
-          <div>
-            <h4>KodNest Technologies</h4>
-            <p>Jan – July 2025</p>
-            <p>Full Stack Developer Trainee</p>
-            <ul>
-              <li>Worked on real-time full stack projects.</li>
-              <li>Practiced frontend and backend technologies extensively.</li>
-            </ul>
-          </div>
         </section>
 
         {/* Projects Section */}<section className="projects-section">
@@ -161,11 +160,46 @@
             <span className="tech-pill">MongoDB</span>
           </div>
           <div className="project-links">
-            <a href="#" className="project-link link-primary">Live Demo</a>
+            <a className="project-link link-primary" >Live Demo</a>
             <a href="#" className="project-link link-secondary">View Code</a>
           </div>
         </div>
       </div>
+      {/* Project 1 */}
+      <div className="project-card">
+  <div className="project-image todo-app-image"></div> {/* You can style this with background image or add an img tag */}
+  <div className="project-content">
+    <h3 className="project-title">Todo App</h3>
+    <p className="project-description">
+      A simple and efficient Todo app built with React and Vite, featuring task management with a clean UI.
+    </p>
+    <div className="project-tech">
+      <span className="tech-pill">React</span>
+      <span className="tech-pill">Vite</span>
+      <span className="tech-pill">HTML</span>
+      <span className="tech-pill">CSS</span>
+      <span className="tech-pill">JavaScript</span>
+    </div>
+    <div className="project-links">
+      <a 
+        href="https://bhuvanesh-react-todo.netlify.app/" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        className="project-link link-primary"
+      >
+        Live Demo
+      </a>
+      <a 
+        href="https://github.com/bhuvanesh2207/React-Todo" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        className="project-link link-secondary"
+      >
+        View Code
+      </a>
+    </div>
+  </div>
+</div>
 
       {/* Project 2 */}
       <div className="project-card">
@@ -182,7 +216,7 @@
         </div>
         <div className="project-links">
           <a href="https://bhuvanesh-react-tutorial-app.netlify.app/" target="_blank" className="project-link link-primary">Live Demo</a>
-          <a href="https://github.com/bhuvanesh2207/Portfolio" target="_blank" className="project-link link-secondary">View Code</a>
+          <a href="https://github.com/bhuvanesh2207/React-Tutorial-Project" target="_blank" className="project-link link-secondary">View Code</a>
         </div>
       </div>
     </div>

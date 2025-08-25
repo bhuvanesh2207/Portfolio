@@ -1,6 +1,6 @@
 import axios from 'axios';
 import React, { useState } from 'react';
-
+import '../styles/Contact.css';
 export default function Contact() {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
@@ -25,6 +25,13 @@ export default function Contact() {
   };
 
   return (
+    <>
+      <div className="contact-details">
+    <p><strong>Email:</strong> bhuvaneshb546@gmail.com</p>
+    <p><strong>Phone:</strong> +91 93453 17239</p>
+    <p><strong>Location:</strong> Hosur, Tamil Nadu</p>
+  </div>
+
     <section className="contact-section slide-up-on-load">
       <h2>Contact</h2>
       <form onSubmit={handleSubmit}>
@@ -52,5 +59,6 @@ export default function Contact() {
         <button type="submit">Send</button>
       </form>
     </section>
+    </>
   );
 }
