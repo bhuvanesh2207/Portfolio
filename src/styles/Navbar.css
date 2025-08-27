@@ -16,16 +16,18 @@
 }
 
 .navmenu::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(90deg, 
-    rgba(110, 69, 226, 0.2) 0%, 
-    transparent 50%, 
-    rgba(255, 126, 95, 0.2) 100%);
+  background: linear-gradient(
+    90deg,
+    rgba(110, 69, 226, 0.2) 0%,
+    transparent 50%,
+    rgba(255, 126, 95, 0.2) 100%
+  );
   z-index: -1;
 }
 
@@ -59,7 +61,7 @@
 }
 
 .navmenu a::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   left: 0;
@@ -90,7 +92,7 @@
   .navmenu {
     padding: 1rem 2rem;
   }
-  
+
   .navmenu ul {
     gap: 2rem;
   }
@@ -100,7 +102,7 @@
   .navmenu ul {
     gap: 1.5rem;
   }
-  
+
   .navmenu a {
     font-size: 1rem;
   }
@@ -110,12 +112,12 @@
   .navmenu {
     padding: 0.8rem 1.5rem;
   }
-  
+
   .navmenu ul {
     gap: 1.2rem;
     margin-left: 10px; /* Adjusted for smaller screens */
   }
-  
+  /*  */
   .navmenu a {
     font-size: 0.95rem;
   }

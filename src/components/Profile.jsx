@@ -1,12 +1,11 @@
 import React, { useEffect } from "react";
 import { useNavigate, Link } from "react-router-dom";
-import profilePic from "../assets/profile.jpg";
-
+import "../styles/Profile.css";
 export default function Profile() {
   const navigate = useNavigate();
 
   const handleExploreClick = () => {
-    navigate("/home"); 
+    navigate("/home");
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
@@ -37,22 +36,23 @@ export default function Profile() {
 
   return (
     <main className="landing-container">
-      {/* Profile Image */}
-      <img src={profilePic} alt="Profile" className="reveal profile-pic" />
-
       {/* Name & Basic Info */}
       <h1 className="reveal profile-name">Bhuvanesh KR</h1>
       <p className="reveal profile-title">Java & Full-Stack Developer</p>
       <p className="reveal profile-description">
-        Computer Science graduate with strong Full Stack Development skills and a keen interest in Backend Development.
-        Experienced in building scalable, secure web applications using REST APIs and database integration.
-        Passionate about solving real-world problems through technology and effective teamwork, continuously 
-        updating skills to keep pace with modern web practices.
+        Computer Science graduate with strong Full Stack Development skills and
+        a keen interest in Backend Development. Experienced in building
+        scalable, secure web applications using REST APIs and database
+        integration. Passionate about solving real-world problems through
+        technology and effective teamwork, continuously updating skills to keep
+        pace with modern web practices.
       </p>
 
       {/* Explore Me Button */}
       <button className="reveal explore-btn" onClick={handleExploreClick}>
-        <Link to="/home" className="explore-link">Explore Me</Link>
+        <Link to="/home" className="explore-link">
+          Explore Me
+        </Link>
       </button>
 
       {/* Contact Info */}

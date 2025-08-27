@@ -9,20 +9,32 @@
   --cosmic-neon: #9c00b1;
   --cosmic-text: rgba(255, 255, 255, 0.92);
   --cosmic-text-secondary: rgba(255, 255, 255, 0.7);
-  
-  --gradient-primary: linear-gradient(135deg, var(--cosmic-primary), var(--cosmic-accent));
-  --gradient-secondary: linear-gradient(to right, var(--cosmic-secondary), var(--cosmic-neon));
-  --gradient-dark: linear-gradient(to bottom, rgba(26, 26, 46, 0.9), rgba(10, 10, 20, 0.95));
-  
+
+  --gradient-primary: linear-gradient(
+    135deg,
+    var(--cosmic-primary),
+    var(--cosmic-accent)
+  );
+  --gradient-secondary: linear-gradient(
+    to right,
+    var(--cosmic-secondary),
+    var(--cosmic-neon)
+  );
+  --gradient-dark: linear-gradient(
+    to bottom,
+    rgba(26, 26, 46, 0.9),
+    rgba(10, 10, 20, 0.95)
+  );
+
   --shadow-glowing: 0 0 20px rgba(110, 69, 226, 0.6);
   --shadow-float: 0 15px 40px rgba(0, 0, 0, 0.4);
   --shadow-inset: inset 0 0 30px rgba(0, 0, 0, 0.3);
   --shadow-card: 0 10px 40px rgba(0, 0, 0, 0.4);
-  
+
   --transition-smooth: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
   --transition-bounce: all 0.8s cubic-bezier(0.68, -0.6, 0.32, 1.6);
   --transition-card: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
-  
+
   --border-radius: 14px;
   --border-radius-lg: 28px;
   --border-radius-xl: 42px;
@@ -42,13 +54,20 @@
 
 /* Cosmic Body - Fixed Navbar Spacing */
 body {
-  font-family: 'Poppins', system-ui, -apple-system, sans-serif;
+  font-family: "Poppins", system-ui, -apple-system, sans-serif;
   line-height: 1.7;
   color: var(--cosmic-text);
   background: var(--cosmic-dark);
-  background-image: 
-    radial-gradient(circle at 10% 20%, rgba(110, 69, 226, 0.15) 0%, transparent 25%),
-    radial-gradient(circle at 90% 80%, rgba(255, 126, 95, 0.15) 0%, transparent 25%);
+  background-image: radial-gradient(
+      circle at 10% 20%,
+      rgba(110, 69, 226, 0.15) 0%,
+      transparent 25%
+    ),
+    radial-gradient(
+      circle at 90% 80%,
+      rgba(255, 126, 95, 0.15) 0%,
+      transparent 25%
+    );
   min-height: 100vh;
   overflow-x: hidden;
   padding-top: 70px; /* For fixed navbar */
@@ -98,13 +117,17 @@ section {
 }
 
 section::before {
-  content: '';
+  content: "";
   position: absolute;
   top: -50%;
   left: -50%;
   width: 200%;
   height: 200%;
-  background: radial-gradient(circle, rgba(110, 69, 226, 0.15) 0%, transparent 70%);
+  background: radial-gradient(
+    circle,
+    rgba(110, 69, 226, 0.15) 0%,
+    transparent 70%
+  );
   transform: rotate(30deg);
   z-index: -1;
   pointer-events: none;
@@ -112,13 +135,15 @@ section::before {
 
 section:hover {
   transform: translateY(-8px); /* Reduced hover effect */
-  box-shadow: 
-    0 20px 40px rgba(110, 69, 226, 0.4),
+  box-shadow: 0 20px 40px rgba(110, 69, 226, 0.4),
     0 0 0 1px rgba(255, 255, 255, 0.2);
 }
 
 /* Updated Cosmic Typography */
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   font-weight: 700;
   line-height: 1.3;
   margin-bottom: 1.25rem;
@@ -133,7 +158,7 @@ h1 {
 }
 
 h1::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: -10px;
   left: 0;
@@ -188,7 +213,7 @@ li {
 }
 
 li::before {
-  content: '▹';
+  content: "▹";
   position: absolute;
   left: 0;
   color: var(--cosmic-neon);
@@ -202,7 +227,7 @@ li::before {
 }
 
 .about-section::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   right: 0;
@@ -216,7 +241,7 @@ li::before {
 
 /* Add underline to About section heading */
 .about-section h2::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: -10px;
   left: 0;
@@ -234,19 +259,23 @@ li::before {
 }
 
 .education::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 14px;
   height: 100%;
   width: 3px;
-  background: linear-gradient(to bottom, var(--cosmic-primary), var(--cosmic-accent));
+  background: linear-gradient(
+    to bottom,
+    var(--cosmic-primary),
+    var(--cosmic-accent)
+  );
   border-radius: 3px;
 }
 
 /* Add underline to Education section heading */
 .education-section h2::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: -10px;
   left: 0;
@@ -265,7 +294,7 @@ li::before {
 }
 
 .education div::before {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   top: 7px;
@@ -295,7 +324,7 @@ li::before {
 .skill-category {
   background: rgba(255, 255, 255, 0.06);
   border-radius: var(--border-radius-lg);
-  padding:  1.5rem;
+  padding: 1.5rem;
   transition: var(--transition-smooth);
   border: 1px solid rgba(255, 255, 255, 0.08);
   width: 100%;
@@ -318,9 +347,9 @@ li::before {
 
 .skill-category ul {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); 
-  gap: 0.8rem; 
-  margin-top: 0.5rem; 
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 0.8rem;
+  margin-top: 0.5rem;
 }
 
 /* Responsive adjustments */
@@ -328,7 +357,7 @@ li::before {
   .skill-category {
     padding: 1.2rem;
   }
-  
+
   .skill-category ul {
     grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
     gap: 0.6rem;
@@ -339,16 +368,16 @@ li::before {
   .skills-section {
     gap: 0.8rem;
   }
-  
+
   .skill-category {
     padding: 1rem;
   }
-  
+
   .skill-category ul {
     grid-template-columns: 1fr;
     gap: 0.5rem;
   }
-  
+
   .skill-category h3 {
     margin-bottom: 0.8rem;
     font-size: 1.2rem;
@@ -410,7 +439,7 @@ li::before {
 }
 
 .project-card::before {
-  content: '';
+  content: "";
   position: absolute;
   inset: 0;
   background: var(--gradient-dark);
@@ -420,7 +449,7 @@ li::before {
 }
 
 .project-card::after {
-  content: '';
+  content: "";
   position: absolute;
   inset: 0;
   background: var(--gradient-primary);
@@ -431,8 +460,7 @@ li::before {
 
 .project-card:hover {
   transform: translateY(-15px) scale(1.03);
-  box-shadow: 
-    0 25px 50px rgba(110, 69, 226, 0.4),
+  box-shadow: 0 25px 50px rgba(110, 69, 226, 0.4),
     0 0 0 1px rgba(255, 255, 255, 0.15);
 }
 
@@ -541,7 +569,7 @@ li::before {
 }
 
 .project-link::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -558,7 +586,11 @@ li::before {
 }
 
 .link-primary::before {
-  background: linear-gradient(to right, var(--cosmic-accent), var(--cosmic-primary));
+  background: linear-gradient(
+    to right,
+    var(--cosmic-accent),
+    var(--cosmic-primary)
+  );
   opacity: 0;
 }
 
@@ -600,7 +632,8 @@ li::before {
 
 /* Project Card Animation */
 @keyframes cardFloat {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateY(0);
   }
   50% {
@@ -645,7 +678,7 @@ li::before {
   .project-card {
     height: 420px;
   }
-  
+
   .project-content {
     padding: 2rem;
   }
@@ -656,7 +689,7 @@ li::before {
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     gap: 2rem;
   }
-  
+
   .project-title {
     font-size: 1.8rem;
   }
@@ -666,20 +699,20 @@ li::before {
   .project-grid {
     grid-template-columns: 1fr;
   }
-  
+
   .project-card {
     height: 400px;
   }
-  
+
   .project-content {
     padding: 1.8rem;
   }
-  
+
   .project-links {
     flex-direction: column;
     gap: 1rem;
   }
-  
+
   .project-link {
     width: 100%;
     text-align: center;
@@ -687,7 +720,7 @@ li::before {
 }
 /* ===== Scroll Reveal Animations ===== */
 .reveal {
-  opacity: 0;                /* hidden initially */
+  opacity: 0; /* hidden initially */
   transform: translateY(50px); /* slide up from below */
   transition: all 0.8s ease; /* smooth animation */
 }

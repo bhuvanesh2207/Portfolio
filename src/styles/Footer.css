@@ -13,18 +13,19 @@
   margin-top: 5rem; /* Reduced from 6rem */
 }
 
-
 .footer::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(90deg, 
-    rgba(110, 69, 226, 0.15) 0%, 
-    transparent 50%, 
-    rgba(255, 126, 95, 0.15) 100%);
+  background: linear-gradient(
+    90deg,
+    rgba(110, 69, 226, 0.15) 0%,
+    transparent 50%,
+    rgba(255, 126, 95, 0.15) 100%
+  );
   z-index: -1;
 }
 
@@ -64,7 +65,7 @@
 }
 
 .footer_links a::after {
-  content: '';
+  content: "";
   position: absolute;
   top: -3px;
   left: -3px;
@@ -92,7 +93,8 @@
 }
 
 @keyframes iconPulse {
-  0%, 100% {
+  0%,
+  100% {
     transform: scale(1);
   }
   50% {
@@ -108,11 +110,11 @@
     padding: 2rem;
     text-align: center;
   }
-  
+
   .footer_links {
     gap: 1.5rem;
   }
-  
+
   .footer_links a {
     width: 40px;
     height: 40px;
@@ -123,11 +125,11 @@
   .footer {
     padding: 1.8rem 1.5rem;
   }
-  
+
   .footer p {
     font-size: 0.9rem;
   }
-  
+
   .footer_links a {
     width: 38px;
     height: 38px;
