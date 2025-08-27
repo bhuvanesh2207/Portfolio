@@ -48,8 +48,8 @@
 }
 
 ::selection {
-  background: var(--cosmic-neon);
-  color: var(--cosmic-dark);
+  background: #ffffff;
+  color: #000000;
 }
 
 /* Cosmic Body - Fixed Navbar Spacing */
