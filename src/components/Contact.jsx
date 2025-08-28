@@ -15,10 +15,11 @@ export default function Contact() {
     e.preventDefault(); // Prevent form reload
 
     axios
-      .post("http://localhost:8080/contact", {
+      .post("https://your-backend.onrender.com/contact", {
         email: email,
         message: message,
       })
+
       .then((res) => {
         alert("Mail sent successfully...");
         setEmail("");
